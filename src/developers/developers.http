@@ -1,0 +1,27 @@
+### List Developers
+GET http://localhost:3000/developers
+
+### Get Developer
+GET http://localhost:3000/developers/1
+
+### Create Developer
+POST http://localhost:3000/developers
+Content-Type: application/json
+
+{
+    "name": "Samuel Abreu",
+    "email": "samuelabreudev@gmail.com",
+    "dateOfBirth": "2006-05-18"
+}
+
+
+### Update Developer
+PATCH  http://localhost:3000/developers/1
+Content-Type: application/json
+
+{
+    "email": "teste@gmail.com"
+}
+
+### Delete Developer
+DELETE http://localhost:3000/developers/1
